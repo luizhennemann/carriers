@@ -1,6 +1,7 @@
 # Carriers
-Training carriers rate app for Axado company
-
+*********************************************
+Training carriers rate app for Axado Company.
+*********************************************
 This app was created to show a little bit of my C# programming skills for the purpose to be hired by Axado company.
 
 This app was developed to rate carriers. To run this app, there is no database configuration needed. Once you download the app, the connection string is already configured and the data will be stored in a secure database.
