@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Carriers.Models.Users>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -33,7 +33,14 @@
             @Html.DisplayFor(modelItem => item.Password)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Role)
+            @if (item.Role.Equals("A"))
+            {
+                <span>Admin</span>
+            }
+            else
+            {
+                <span>User</span>
+            }
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

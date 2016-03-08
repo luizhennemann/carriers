@@ -6,12 +6,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFsNtJSya3ECdwmn0ra7WuQAAAAACAAAAAAAQZgAAAAEAACAAAACv3pr6nbyQG+SCQIqOyrQ2ypx/bwO0RUsDc5HxLrLKKQAAAAAOgAAAAAIAACAAAACTnmu9Pu7iOjNRcxcID/pM2d1kZE/d+oeM7UaGg9I2bCAAAADnaXMNmqiqFA6ISwkyvAfowSzWVSFt6jpP0wPflqiUr0AAAACrqvrrL+JZmYcIP092hEOVBX8QtGLxMC+aIYqbHZ7kG+7DPMjOyPTUvriXz3pHTwfyxo3tdQ8SJY8bup15kf3u</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFsNtJSya3ECdwmn0ra7WuQAAAAACAAAAAAAQZgAAAAEAACAAAABRX7gHmZZLfzfq4Qdsl6lcQCYXquZjVN6ZstEKjpIcGgAAAAAOgAAAAAIAACAAAADIGiDmeO3WEo3RcuLZ6brz7f1Mr5PpbfJEA+ViJwEyyiAAAACOq4w/DuZb5gUM/rPKVN+RLYcyZg460pDA3xhoUmW5AkAAAABDdclRq7V6Z8d1/yV/kDhPz3Vk2kylyEMKvDavZ1X0loLcDbKp5X6B5Jlo3Hfz5jjj6iWsVhVEKdp99QxhCOGk</EncryptedPassword>
     <_PublishTargetUrl>ftp://208.94.246.107/www.carriers.somee.com/</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Carriers.dll">
-      <publishTime>03/08/2016 15:10:51</publishTime>
+      <publishTime>03/08/2016 15:51:17</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/07/2016 21:05:49</publishTime>
@@ -203,7 +203,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 22:47:15</publishTime>
     </File>
     <File Include="Views/User/Details.cshtml">
-      <publishTime>03/07/2016 22:47:15</publishTime>
+      <publishTime>03/08/2016 16:06:38</publishTime>
     </File>
     <File Include="Views/User/Edit.cshtml">
       <publishTime>03/08/2016 00:29:17</publishTime>
@@ -218,7 +218,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:09:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/08/2016 15:11:07</publishTime>
+      <publishTime>03/08/2016 15:51:22</publishTime>
     </File>
   </ItemGroup>
 </Project>
