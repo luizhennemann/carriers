@@ -111,6 +111,25 @@ namespace Carriers.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Models.Carriers carriers = db.Carriers.Find(id);
+
+            using (var con = new CARRIERSEntities())
+            {
+                var sql = from r
+                          in con.Rates
+                          where r.Carrier == id
+                          select r;
+                if (sql.Count() > 0)
+                {
+                    ViewBag.msg = "This Carrier cannot be deleted. There are rates registered for this Carrier.";
+
+                    if (carriers == null)
+                    {
+                        return HttpNotFound();
+                    }
+                    return View(carriers);
+                }
+            }
+            
             db.Carriers.Remove(carriers);
             db.SaveChanges();
             return RedirectToAction("Index");

@@ -40,7 +40,14 @@ namespace Carriers.Controllers
         // GET: Rate/Create
         public ActionResult Create()
         {
-            ViewBag.Carrier = new SelectList(db.Carriers, "Id", "Name");
+            var userId = GetUserId();
+
+            var items = from r
+                        in db.Carriers
+                        where !db.Rates.Any(x => x.Carrier == r.Id && x.User == userId)
+                        select r;
+
+            ViewBag.Carrier = new SelectList(items, "Id", "Name");
             ViewBag.User = new SelectList(db.Users, "Id", "Login");
             return View();
         }
@@ -61,7 +68,12 @@ namespace Carriers.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Carrier = new SelectList(db.Carriers, "Id", "Name", rates.Carrier);
+            var items = from r
+                        in db.Carriers
+                        where !db.Rates.Any(x => x.Carrier == r.Id && x.User == rates.User)
+                        select r;
+
+            ViewBag.Carrier = new SelectList(items, "Id", "Name", rates.Carrier);
             ViewBag.User = new SelectList(db.Users, "Id", "Login", rates.User);
             return View(rates);
         }
@@ -69,6 +81,8 @@ namespace Carriers.Controllers
         // GET: Rate/Edit/5
         public ActionResult Edit(int? id)
         {
+            var userId = GetUserId();
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -78,7 +92,13 @@ namespace Carriers.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Carrier = new SelectList(db.Carriers, "Id", "Name", rates.Carrier);
+
+            var items = from r
+                        in db.Carriers
+                        where !db.Rates.Any(x => x.Carrier == r.Id && x.User == userId && x.Id != rates.Id)
+                        select r;
+
+            ViewBag.Carrier = new SelectList(items, "Id", "Name", rates.Carrier);
             ViewBag.User = new SelectList(db.Users, "Id", "Login", rates.User);
             return View(rates);
         }
@@ -98,7 +118,13 @@ namespace Carriers.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.Carrier = new SelectList(db.Carriers, "Id", "Name", rates.Carrier);
+
+            var items = from r
+                        in db.Carriers
+                        where !db.Rates.Any(x => x.Carrier == r.Id && x.User == rates.User && x.Id != rates.Id)
+                        select r;
+
+            ViewBag.Carrier = new SelectList(items, "Id", "Name", rates.Carrier);
             ViewBag.User = new SelectList(db.Users, "Id", "Login", rates.User);
             return View(rates);
         }

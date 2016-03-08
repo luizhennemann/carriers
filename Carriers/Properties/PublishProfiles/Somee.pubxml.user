@@ -10,8 +10,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>ftp://208.94.246.107/www.carriers.somee.com/</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="App_Start/RouteConfig.cs">
+      <publishTime>03/07/2016 21:01:30</publishTime>
+    </File>
     <File Include="bin/Carriers.dll">
-      <publishTime>03/08/2016 15:51:17</publishTime>
+      <publishTime>03/08/2016 16:50:47</publishTime>
+    </File>
+    <File Include="bin/Carriers.pdb">
+      <publishTime>03/08/2016 16:50:47</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/07/2016 21:05:49</publishTime>
@@ -100,6 +106,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.Webpages.Razor.dll">
       <publishTime>03/07/2016 21:01:31</publishTime>
     </File>
+    <File Include="Carriers.csproj">
+      <publishTime>03/08/2016 15:51:14</publishTime>
+    </File>
+    <File Include="Carriers.csproj.user">
+      <publishTime>03/08/2016 15:51:14</publishTime>
+    </File>
     <File Include="Content/bootstrap.css">
       <publishTime>03/07/2016 21:09:21</publishTime>
     </File>
@@ -108,6 +120,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Site.css">
       <publishTime>03/07/2016 21:09:18</publishTime>
+    </File>
+    <File Include="Controllers/AccountController.cs">
+      <publishTime>03/08/2016 00:33:47</publishTime>
+    </File>
+    <File Include="Controllers/CarrierController.cs">
+      <publishTime>03/07/2016 22:45:30</publishTime>
+    </File>
+    <File Include="Controllers/HomeController.cs">
+      <publishTime>03/08/2016 16:39:51</publishTime>
+    </File>
+    <File Include="Controllers/RateController.cs">
+      <publishTime>03/08/2016 11:03:59</publishTime>
+    </File>
+    <File Include="Controllers/UserController.cs">
+      <publishTime>03/08/2016 00:33:31</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>03/07/2016 21:09:21</publishTime>
@@ -124,11 +151,83 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Global.asax">
       <publishTime>03/07/2016 21:01:30</publishTime>
     </File>
+    <File Include="Global.asax.cs">
+      <publishTime>03/07/2016 21:01:30</publishTime>
+    </File>
+    <File Include="Models/Carriers.cs">
+      <publishTime>03/07/2016 21:06:19</publishTime>
+    </File>
+    <File Include="Models/MyCarriersModel.Context.cs">
+      <publishTime>03/08/2016 14:45:05</publishTime>
+    </File>
+    <File Include="Models/MyCarriersModel.Context.tt">
+      <publishTime>03/07/2016 21:05:48</publishTime>
+    </File>
+    <File Include="Models/MyCarriersModel.cs">
+      <publishTime>03/08/2016 14:45:07</publishTime>
+    </File>
+    <File Include="Models/MyCarriersModel.Designer.cs">
+      <publishTime>03/08/2016 14:41:49</publishTime>
+    </File>
     <File Include="Models/MyCarriersModel.edmx.diagram">
       <publishTime>03/07/2016 21:07:27</publishTime>
     </File>
+    <File Include="Models/MyCarriersModel.tt">
+      <publishTime>03/07/2016 21:05:52</publishTime>
+    </File>
+    <File Include="Models/Rates.cs">
+      <publishTime>03/08/2016 14:31:42</publishTime>
+    </File>
+    <File Include="Models/Users.cs">
+      <publishTime>03/07/2016 21:06:19</publishTime>
+    </File>
+    <File Include="MyRoleProvider.cs">
+      <publishTime>03/07/2016 23:11:24</publishTime>
+    </File>
     <File Include="packages.config">
       <publishTime>03/07/2016 21:09:26</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>03/07/2016 21:01:27</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/Somee.pubxml">
+      <publishTime>03/08/2016 15:51:13</publishTime>
+    </File>
+    <File Include="roslyn/csc.exe">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/System.Collections.Immutable.dll">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/System.Reflection.Metadata.dll">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/vbc.exe">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/VBCSCompiler.exe">
+      <publishTime>03/07/2016 21:01:31</publishTime>
+    </File>
+    <File Include="roslyn/VBCSCompiler.exe.config">
+      <publishTime>03/07/2016 21:01:31</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.js">
       <publishTime>03/07/2016 21:01:39</publishTime>
@@ -141,6 +240,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="scripts/bootstrap.min.js">
       <publishTime>03/07/2016 21:09:21</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.intellisense.js">
+      <publishTime>03/07/2016 21:09:24</publishTime>
     </File>
     <File Include="scripts/jquery-1.10.2.js">
       <publishTime>03/07/2016 21:09:23</publishTime>
@@ -173,7 +275,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:14:36</publishTime>
     </File>
     <File Include="Views/Carrier/Index.cshtml">
-      <publishTime>03/07/2016 22:42:00</publishTime>
+      <publishTime>03/08/2016 16:44:29</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>03/07/2016 22:41:41</publishTime>
@@ -191,7 +293,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 23:51:27</publishTime>
     </File>
     <File Include="Views/Rate/Index.cshtml">
-      <publishTime>03/07/2016 23:50:55</publishTime>
+      <publishTime>03/08/2016 16:42:51</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/07/2016 23:14:55</publishTime>
@@ -203,13 +305,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 22:47:15</publishTime>
     </File>
     <File Include="Views/User/Details.cshtml">
-      <publishTime>03/08/2016 16:06:38</publishTime>
+      <publishTime>03/08/2016 16:41:24</publishTime>
     </File>
     <File Include="Views/User/Edit.cshtml">
       <publishTime>03/08/2016 00:29:17</publishTime>
     </File>
     <File Include="Views/User/Index.cshtml">
-      <publishTime>03/08/2016 00:12:48</publishTime>
+      <publishTime>03/08/2016 16:52:22</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>03/07/2016 21:57:40</publishTime>
@@ -218,7 +320,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:09:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/08/2016 15:51:22</publishTime>
+      <publishTime>03/08/2016 16:55:19</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>03/07/2016 21:01:29</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>03/07/2016 21:01:29</publishTime>
     </File>
   </ItemGroup>
 </Project>

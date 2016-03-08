@@ -32,7 +32,14 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Role)
+            @if (Model.Role.Equals("A"))
+            {
+                <span>Admin</span>
+            }
+            else
+            {
+                <span>User</span>
+            }
         </dd>
 
     </dl>

@@ -11,12 +11,21 @@ namespace Carriers.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     public partial class Rates
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Carrier is required.")]
         public int Carrier { get; set; }
+
+        [Required(ErrorMessage = "User is required.")]
+        [DisplayName("User")]
         public int User { get; set; }
+
+        [Required(ErrorMessage = "Rates is required.")]
+        [Range(1, 10, ErrorMessage = "The rate must be between 1 and 10.")]
         public int Rate { get; set; }
     
         public virtual Carriers Carriers { get; set; }

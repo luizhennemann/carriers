@@ -140,6 +140,42 @@ namespace Carriers.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Users users = db.Users.Find(id);
+
+            using (var con = new CARRIERSEntities())
+            {
+                var sql = from r
+                          in con.Rates
+                          where r.User == id
+                          select r;
+                if (sql.Count() > 0)
+                {
+                    ViewBag.msg = "This User cannot be deleted. There are rates registered for this User.";
+
+                    if (users == null)
+                    {
+                        return HttpNotFound();
+                    }
+                    return View(users);
+                }
+
+                var sql1 = from q
+                           in con.Users
+                           where q.Role == "A"
+                           select q;
+
+                if (sql1.Count() == 1 && users.Role == "A")
+                {
+                    ViewBag.msg = "This User cannot be deleted. There must be at least one Admin on the database.";
+
+                    if (users == null)
+                    {
+                        return HttpNotFound();
+                    }
+                    return View(users);
+                }
+
+            }
+
             db.Users.Remove(users);
             db.SaveChanges();
             return RedirectToAction("Index");
