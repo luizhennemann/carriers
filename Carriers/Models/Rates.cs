@@ -11,13 +11,11 @@ namespace Carriers.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
+    
     public partial class Rates
     {
         public int Id { get; set; }
         public int Carrier { get; set; }
-
-        [DisplayName("User")]
         public int User { get; set; }
         public int Rate { get; set; }
     

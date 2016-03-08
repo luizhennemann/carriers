@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="carriers" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\CodeRep\\carriers\\Carriers\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\CodeRep\\carriers\\Carriers\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="CARRIERSEntities-Web.config Connection String" description="" value="metadata=res://*/Models.MyCarriersModel.csdl|res://*/Models.MyCarriersModel.ssdl|res://*/Models.MyCarriersModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=LUIZ-PC\SQLEXPRESS;Initial Catalog=CARRIERS;Integrated Security=True&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\CodeRep\\carriers\\Carriers\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CARRIERSEntities']/@connectionString" />
+  </parameter>
+</parameters>

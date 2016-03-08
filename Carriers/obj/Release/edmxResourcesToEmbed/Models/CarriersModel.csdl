@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="carriersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Carriers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Rates" Relationship="Self.FK_Rates_Carriers" FromRole="Carriers" ToRole="Rates" />
+  </EntityType>
+  <EntityType Name="Rates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Carrier" Type="Int32" Nullable="false" />
+    <Property Name="User" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Carriers" Relationship="Self.FK_Rates_Carriers" FromRole="Rates" ToRole="Carriers" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Rates_Users" FromRole="Rates" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Rates" Relationship="Self.FK_Rates_Users" FromRole="Users" ToRole="Rates" />
+  </EntityType>
+  <Association Name="FK_Rates_Carriers">
+    <End Role="Carriers" Type="Self.Carriers" Multiplicity="1" />
+    <End Role="Rates" Type="Self.Rates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carriers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rates">
+        <PropertyRef Name="Carrier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rates_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Rates" Type="Self.Rates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rates">
+        <PropertyRef Name="User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="carriersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Carriers" EntityType="Self.Carriers" />
+    <EntitySet Name="Rates" EntityType="Self.Rates" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_Rates_Carriers" Association="Self.FK_Rates_Carriers">
+      <End Role="Carriers" EntitySet="Carriers" />
+      <End Role="Rates" EntitySet="Rates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rates_Users" Association="Self.FK_Rates_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Rates" EntitySet="Rates" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
