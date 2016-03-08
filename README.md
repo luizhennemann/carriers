@@ -6,7 +6,7 @@ This app was created to show a little bit of my C# programming skills for the pu
 
 This app was developed to rate carriers. To run this app, there is no database configuration needed. Once you download the app, the connection string is already configured and the data will be stored in a secure database.
 
-If you want to use your own database, you can run the file 'script.sql' in your host to create the database. After that, you can populate the database importing the file 'CARRIERS.bak'. Just remember to change the connection string on the 'Web.config' file with your database configuration.
+If you want to use your own database, you can run the Database/script.sql file in your host to create the database. After that, you can populate the database importing the Database/CARRIERS.bak file. Just remember to change the connection string on the Carriers/Web.config file with your database configuration.
 
 Business rules of the app:
 --------------------------
