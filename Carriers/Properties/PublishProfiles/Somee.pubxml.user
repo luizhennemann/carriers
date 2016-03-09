@@ -14,10 +14,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:01:30</publishTime>
     </File>
     <File Include="bin/Carriers.dll">
-      <publishTime>03/08/2016 16:50:47</publishTime>
+      <publishTime>03/08/2016 18:28:08</publishTime>
     </File>
     <File Include="bin/Carriers.pdb">
-      <publishTime>03/08/2016 16:50:47</publishTime>
+      <publishTime>03/08/2016 18:28:08</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/07/2016 21:05:49</publishTime>
@@ -125,16 +125,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/08/2016 00:33:47</publishTime>
     </File>
     <File Include="Controllers/CarrierController.cs">
-      <publishTime>03/07/2016 22:45:30</publishTime>
+      <publishTime>07/03/2016 22:45:30</publishTime>
     </File>
     <File Include="Controllers/HomeController.cs">
       <publishTime>03/08/2016 16:39:51</publishTime>
     </File>
     <File Include="Controllers/RateController.cs">
-      <publishTime>03/08/2016 11:03:59</publishTime>
+      <publishTime>03/08/2016 18:11:36</publishTime>
     </File>
     <File Include="Controllers/UserController.cs">
-      <publishTime>03/08/2016 00:33:31</publishTime>
+      <publishTime>03/08/2016 18:17:12</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>03/07/2016 21:09:21</publishTime>
@@ -155,7 +155,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:01:30</publishTime>
     </File>
     <File Include="Models/Carriers.cs">
-      <publishTime>03/07/2016 21:06:19</publishTime>
+      <publishTime>03/08/2016 17:30:10</publishTime>
     </File>
     <File Include="Models/MyCarriersModel.Context.cs">
       <publishTime>03/08/2016 14:45:05</publishTime>
@@ -176,10 +176,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:05:52</publishTime>
     </File>
     <File Include="Models/Rates.cs">
-      <publishTime>03/08/2016 14:31:42</publishTime>
+      <publishTime>03/08/2016 17:56:36</publishTime>
     </File>
     <File Include="Models/Users.cs">
-      <publishTime>03/07/2016 21:06:19</publishTime>
+      <publishTime>03/08/2016 17:35:03</publishTime>
     </File>
     <File Include="MyRoleProvider.cs">
       <publishTime>03/07/2016 23:11:24</publishTime>
@@ -266,7 +266,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:14:31</publishTime>
     </File>
     <File Include="Views/Carrier/Delete.cshtml">
-      <publishTime>03/07/2016 21:14:33</publishTime>
+      <publishTime>03/08/2016 18:06:27</publishTime>
     </File>
     <File Include="Views/Carrier/Details.cshtml">
       <publishTime>03/07/2016 21:14:34</publishTime>
@@ -302,10 +302,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/08/2016 00:25:47</publishTime>
     </File>
     <File Include="Views/User/Delete.cshtml">
-      <publishTime>03/07/2016 22:47:15</publishTime>
+      <publishTime>03/08/2016 18:22:24</publishTime>
     </File>
     <File Include="Views/User/Details.cshtml">
-      <publishTime>03/08/2016 16:41:24</publishTime>
+      <publishTime>03/08/2016 18:22:48</publishTime>
     </File>
     <File Include="Views/User/Edit.cshtml">
       <publishTime>03/08/2016 00:29:17</publishTime>
@@ -320,7 +320,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:09:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/08/2016 16:55:19</publishTime>
+      <publishTime>03/08/2016 20:49:04</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>03/07/2016 21:01:29</publishTime>

@@ -51,6 +51,20 @@ namespace Carriers.Controllers
         {
             if (ModelState.IsValid)
             {
+                using (var con = new CARRIERSEntities())
+                {
+                    var sql = from r
+                              in con.Carriers
+                              where (r.Name == carriers.Name)
+                              select r;
+
+                    if (sql.Count() > 0)
+                    {
+                        ViewBag.msg = "This name is already used. Please try another one.";
+                        return View(carriers);
+                    }
+                }
+
                 db.Carriers.Add(carriers);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -83,6 +97,20 @@ namespace Carriers.Controllers
         {
             if (ModelState.IsValid)
             {
+                using (var con = new CARRIERSEntities())
+                {
+                    var sql = from r
+                              in con.Carriers
+                              where (r.Name == carriers.Name && r.Id != carriers.Id)
+                              select r;
+
+                    if (sql.Count() > 0)
+                    {
+                        ViewBag.msg = "This name is already used. Please try another one.";
+                        return View(carriers);
+                    }
+                }
+
                 db.Entry(carriers).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
