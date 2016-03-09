@@ -14,10 +14,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:01:30</publishTime>
     </File>
     <File Include="bin/Carriers.dll">
-      <publishTime>03/08/2016 18:28:08</publishTime>
+      <publishTime>03/08/2016 21:15:36</publishTime>
     </File>
     <File Include="bin/Carriers.pdb">
-      <publishTime>03/08/2016 18:28:08</publishTime>
+      <publishTime>03/08/2016 21:15:36</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/07/2016 21:05:49</publishTime>
@@ -125,7 +125,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/08/2016 00:33:47</publishTime>
     </File>
     <File Include="Controllers/CarrierController.cs">
-      <publishTime>07/03/2016 22:45:30</publishTime>
+      <publishTime>03/08/2016 21:09:20</publishTime>
     </File>
     <File Include="Controllers/HomeController.cs">
       <publishTime>03/08/2016 16:39:51</publishTime>
@@ -263,7 +263,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/08/2016 15:24:28</publishTime>
     </File>
     <File Include="Views/Carrier/Create.cshtml">
-      <publishTime>03/07/2016 21:14:31</publishTime>
+      <publishTime>03/08/2016 21:14:34</publishTime>
     </File>
     <File Include="Views/Carrier/Delete.cshtml">
       <publishTime>03/08/2016 18:06:27</publishTime>
@@ -272,7 +272,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:14:34</publishTime>
     </File>
     <File Include="Views/Carrier/Edit.cshtml">
-      <publishTime>03/07/2016 21:14:36</publishTime>
+      <publishTime>03/08/2016 21:14:41</publishTime>
     </File>
     <File Include="Views/Carrier/Index.cshtml">
       <publishTime>03/08/2016 16:44:29</publishTime>
@@ -296,7 +296,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/08/2016 16:42:51</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>03/07/2016 23:14:55</publishTime>
+      <publishTime>03/08/2016 22:33:35</publishTime>
     </File>
     <File Include="Views/User/Create.cshtml">
       <publishTime>03/08/2016 00:25:47</publishTime>
@@ -320,7 +320,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 21:09:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/08/2016 20:49:04</publishTime>
+      <publishTime>03/08/2016 21:17:47</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>03/07/2016 21:01:29</publishTime>
