@@ -15,7 +15,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Carrier" Type="Int32" Nullable="false" />
     <Property Name="User" Type="Int32" Nullable="false" />
-    <Property Name="Rate" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Decimal" Nullable="false" />
     <NavigationProperty Name="Carriers" Relationship="Self.FK_Rates_Carriers" FromRole="Rates" ToRole="Carriers" />
     <NavigationProperty Name="Users" Relationship="Self.FK_Rates_Users" FromRole="Rates" ToRole="Users" />
   </EntityType>

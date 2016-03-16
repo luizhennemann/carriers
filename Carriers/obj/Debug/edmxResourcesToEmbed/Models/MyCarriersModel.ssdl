@@ -14,7 +14,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Carrier" Type="int" Nullable="false" />
     <Property Name="User" Type="int" Nullable="false" />
-    <Property Name="Rate" Type="int" Nullable="false" />
+    <Property Name="Rate" Type="decimal" Precision="9" Scale="2" Nullable="false" />
   </EntityType>
   <EntityType Name="Users">
     <Key>

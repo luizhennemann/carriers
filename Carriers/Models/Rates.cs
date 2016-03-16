@@ -24,9 +24,9 @@ namespace Carriers.Models
         [DisplayName("User")]
         public int User { get; set; }
 
-        [Required(ErrorMessage = "Rates is required.")]
-        [Range(1, 10, ErrorMessage = "The rate must be between 1 and 10.")]
-        public int Rate { get; set; }
+        [Required(ErrorMessage = "Rate is required.")]
+        [Range(0.01, 9999999.99, ErrorMessage = "The rate must be between 0,01 and 9999999,99.")]
+        public decimal Rate { get; set; }
     
         public virtual Carriers Carriers { get; set; }
         public virtual Users Users { get; set; }
